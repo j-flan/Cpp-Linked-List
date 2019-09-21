@@ -56,12 +56,22 @@ namespace main_savitch_5
         }
         //cursor in middle
         else{
+<<<<<<< HEAD
             const node* ptr;
             ptr = source.head_ptr;                       
             int i = 0;
             //find cursor distance from head_ptr
             while(ptr != source.precursor){
                 ptr = ptr->link();
+=======
+            //copy list up-to the cursor
+            list_piece(source.head_ptr, source.cursor, head_ptr, precursor);            
+            cursor = head_ptr;
+            int i = 0;
+            //find cursor distance from head_ptr
+            while(cursor != precursor){
+                cursor = cursor->link();
+>>>>>>> 9863e592780a5cdb62346e826b23668ef5fb3ee8
                 i++;
             }
             //copy full list
@@ -181,7 +191,10 @@ namespace main_savitch_5
 	if (this == &source)
             return;
         
+<<<<<<< HEAD
         list_clear(head_ptr);
+=======
+>>>>>>> 9863e592780a5cdb62346e826b23668ef5fb3ee8
         many_nodes = source.many_nodes;
         //NULL cursor
         if (source.cursor == NULL){
@@ -205,12 +218,22 @@ namespace main_savitch_5
         }
         //cursor in middle
         else{           
+<<<<<<< HEAD
             const node* ptr;
             ptr = source.head_ptr;                       
             int i = 0;
             //find cursor distance from head_ptr
             while(ptr != source.precursor){
                 ptr = ptr->link();
+=======
+           //copy list up-to the cursor
+            list_piece(source.head_ptr, source.cursor, head_ptr, precursor);            
+            cursor = head_ptr;
+            int i = 0;
+            //find cursor distance from head_ptr
+            while(cursor != precursor){
+                cursor = cursor->link();
+>>>>>>> 9863e592780a5cdb62346e826b23668ef5fb3ee8
                 i++;
             }
             //copy full list
@@ -221,9 +244,15 @@ namespace main_savitch_5
                 advance();
                 i--;
             }           
+<<<<<<< HEAD
         }                         
     }
    /* void sequence::list_piece(const node* start, const node* end, node*& head_ptr, node*& tail_ptr){
+=======
+        }                       
+    }
+    void sequence::list_piece(const node* start, const node* end, node*& head_ptr, node*& tail_ptr){
+>>>>>>> 9863e592780a5cdb62346e826b23668ef5fb3ee8
         head_ptr = NULL;
 	tail_ptr = NULL;        
 	// handle the case of the empty list
@@ -240,7 +269,11 @@ namespace main_savitch_5
 	    tail_ptr = tail_ptr->link( );
 	    start = start->link( );
 	}
+<<<<<<< HEAD
     }*/
+=======
+    }
+>>>>>>> 9863e592780a5cdb62346e826b23668ef5fb3ee8
 
 }
 

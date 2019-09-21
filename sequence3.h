@@ -98,7 +98,11 @@ namespace main_savitch_5
         void attach(const value_type& entry);
         void operator =(const sequence& source);
 	void remove_current( );
+<<<<<<< HEAD
         /*void list_piece(const node* start, const node* end, node*& head_ptr, node*& tail_ptr); */// **JF
+=======
+        void list_piece(const node* start, const node* end, node*& head_ptr, node*& tail_ptr); // **JF
+>>>>>>> 9863e592780a5cdb62346e826b23668ef5fb3ee8
         // CONSTANT MEMBER FUNCTIONS
         size_type size( ) const { return many_nodes; }
         bool is_item( ) const { return (cursor != NULL); }
